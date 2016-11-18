@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Mode demo</title>
+	<style>
+		input {
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin: 5px;
+}
+	</style>
+</head>
+<body>
+
+<form>
+<p><label>type=text inputmode=verbatim : <input inputmode="verbatim"></label><span class="description">Alphanumeric Latin-script input of non-prose content, e.g. usernames, passwords, product codes.</span></p>
+<p><label>type=text inputmode=latin : <input inputmode="latin"></label><span class="description">Latin-script input in the user's preferred language(s), with some typing aids enabled (e.g. text prediction). Intended for human-to-computer communications, e.g. free-form text search fields.</span></p>
+<p><label>type=text inputmode=latin-name : <input inputmode="latin-name"></label><span class="description">Latin-script input in the user's preferred language(s), with typing aids intended for entering human names enabled (e.g. text prediction from the user's contact list and automatic capitalisation at every word). Intended for situations such as customer name fields.</span></p>
+<p><label>type=text inputmode=latin-prose : <input inputmode="latin-prose"></label><span class="description">Latin-script input in the user's preferred language(s), with aggressive typing aids intended for human-to-human communications enabled (e.g. text prediction and automatic capitalisation at the start of sentences). Intended for situations such as e-mails and instant messaging.</span></p>
+<p><label>type=text inputmode=full-width-latin : <input inputmode="full-width-latin"></label><span class="description">Latin-script input in the user's secondary language(s), using full-width characters, with aggressive typing aids intended for human-to-human communications enabled (e.g. text prediction and automatic capitalisation at the start of sentences). Intended for latin text embedded inside CJKspantext.
+</span></p>
+<p><label>type=number : <input type="number"></label></p>
+<p><label>type=tel : <input type="tel"></label></p>
+<p><label>type=email : <input type="email"></label></p>
+<p><label>type=url : <input type="url"></label></p>
+
+</form>
+
+<footer>
+Source: <a href="https://developers.whatwg.org/association-of-controls-and-forms.html#attr-fe-inputmode">Developers WhatWG Forms inputmode</a>
+</footer>
+</body>
+</html>
