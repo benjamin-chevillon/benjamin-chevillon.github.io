@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'none';img-src 'self';script-src 'self' 'nonce-test-csp' tags.bkrtx.com/js/bk-coretag.js stags.bluekai.com tags.bluekai.com;style-src 'self';">
+</head>
+<body>
+Demo CSP Bluekai Engie
+
+<script type='text/javascript' nonce="test-csp">
+window.bk_async = function(){
+// ALLOW MULTIPLE CALLS/SINGLE PAGE APPS
+bk_allow_multiple_calls = true;
+bk_use_multiple_iframes = true;
+// DATA
+bk_addPageCtx('party', '2nd');
+// Send Data to BlueKai 
+  BKTAG.doTag(65998, 4); // 65998 is the container ID for MMA.FR
+};
+(function(){
+var scripts = document.getElementsByTagName('script')[0];
+var s = document.createElement('script');
+  s.async = true;
+s.src = '//tags.bkrtx.com/js/bk-coretag.js';
+scripts.parentNode.insertBefore(s, scripts);
+}());
+</script>
+
+
+</body>
+</html>
